@@ -24,13 +24,13 @@ public class Client {
         this.assets.add(assets);
     }
 
-    public Client(String nombre, String apellido, String telefono, int edad, String email, ArrayList<Asset> assets) {
+    public Client(String nombre, String apellido, String telefono, int edad, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.edad = edad;
         this.email = email;
-        this.assets = assets;
+        
     }
 
     public String getNombre() {

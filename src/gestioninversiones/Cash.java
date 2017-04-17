@@ -12,6 +12,10 @@ package gestioninversiones;
 public class Cash implements Asset{
     protected double amount;
 
+    public Cash(double amount) {
+        this.amount = amount;
+    }
+
     public double getAmount() {
         return amount;
     }

@@ -12,6 +12,21 @@ package gestioninversiones;
 public class MutualFund extends ShareAsset{
    protected double totalShares;
 
+    public MutualFund(double totalShares,String symbol, double totalCost, double currentPrice) {
+      //Siempre debe ir primero el padre
+        super(symbol, totalCost, currentPrice);
+        this.totalShares = totalShares;        
+    }
+
+    public double getTotalShares() {
+        return totalShares;
+    }
+
+    public void setTotalShares(double totalShares) {
+        this.totalShares = totalShares;
+    }
+    
+    
     @Override
     public double getMarketValue() {
         //las acciones que tengo por lo que cuesta cada accion
