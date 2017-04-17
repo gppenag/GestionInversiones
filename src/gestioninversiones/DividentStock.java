@@ -12,6 +12,11 @@ package gestioninversiones;
 public class DividentStock extends Stock{
     private double dividends;
 
+    public DividentStock(double dividends,String symbol, double totalCost, double currentPrice) {
+        super(symbol, totalCost, currentPrice);
+        this.dividends = dividends;
+    }
+
     public double getDividends() {
         return dividends;
     }
